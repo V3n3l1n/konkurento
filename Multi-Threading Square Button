@@ -1,0 +1,14 @@
+   private void button4_Click(object sender, EventArgs e)
+        {
+            th3 = new Thread(thread3);
+            th3.Start();
+        }
+
+        public void thread3()
+        {
+            for (int i = 0; i < 6; i++)
+            {
+                this.CreateGraphics().DrawRectangle(new Pen(Brushes.Red, 4), new Rectangle(rdm3.Next(70, this.Width), rdm3.Next(70, this.Height), 10, 10)); //Square Figure
+                Thread.Sleep(10);
+            }
+        }
