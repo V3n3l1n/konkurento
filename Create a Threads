@@ -1,0 +1,25 @@
+ Thread th;
+ Thread th1;
+ Thread th2;
+ Thread th3;
+  private void button1_Click(object sender, EventArgs e)
+        {
+            th = new Thread(thread);
+            th.Start();
+        }
+          private void button2_Click(object sender, EventArgs e)
+        {
+            th1 = new Thread(thread1);
+            th1.Start();
+        }
+          private void button3_Click(object sender, EventArgs e)
+        {
+            th2 = new Thread(thread2);
+            th2.Start();
+        }
+          private void button4_Click(object sender, EventArgs e)
+        {
+            th3 = new Thread(thread3);
+            th3.Start();
+        }
+        
